@@ -25,7 +25,7 @@ a {
     color: #368bc1;
     text-decoration: underline;
 }
-a.email {
+a.email, a.silent {
     text-decoration: none;
     color: #000000;
 }
