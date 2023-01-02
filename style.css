@@ -1,6 +1,10 @@
+:root {
+    --mono-fonts: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    --sans-fonts: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+}
 body {
     margin: 1rem 1in;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--sans-fonts);
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
@@ -38,8 +42,12 @@ a.email, a.silent {
 header {
     text-align: center;
     margin: 0 0 1rem;
+    font-family: var(--mono-fonts);
 }
 section {
+    margin: 1rem 0;
+}
+footer {
     margin: 1rem 0;
 }
 header ul.subheader {
@@ -49,9 +57,13 @@ header ul.subheader {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: var(--sans-fonts);
 }
 header ul.subheader li {
     margin: 0 1rem;
+}
+footer p {
+    text-align: center;
 }
 .entry {
     margin: 1rem 0;
