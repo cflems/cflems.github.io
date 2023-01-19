@@ -101,12 +101,14 @@ body {
 .entry .midright {
     grid-column: 1 / 4;
 }
-.entry .middle.italic {
+.entry .position-title {
     grid-column: 2 / 4;
-    margin: 0 0 0.5rem;
 }
 .entry .right {
     white-space: nowrap;
+}
+.entry .date-optional {
+    display: none;
 }
 header ul.subheader {
     justify-content: space-between;
