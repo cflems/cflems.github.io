@@ -10,11 +10,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="print.js" async="async"></script>
+        <script type="text/javascript" src="eml.js" defer="defer"></script>
     </head>
     <body>
         <header>
             <h1>Carson Fleming</h1>
-            <h3 class="unbold">Software Engineer <a href="https://cflems.net/files/resume.pdf">[Download PDF]</a></h3>
+            <h3 class="unbold">Software Engineer</h3>
+            <h3 class="unbold noprint"><a href="#" onclick="makePrintable(); return false;">[Print Version]</a> <a href="https://cflems.net/files/resume.pdf">[Download PDF]</a></h3>
             <hr />
             <ul class="subheader">
                 <li><a class="email" data-cipher="8/Hi4//+0PP2/PX9477+9eQ=">[redacted]</a></li>
@@ -22,10 +25,19 @@
                 <li>New York, NY</li>
             </ul>
         </header>
-        <script type="text/javascript" src="eml.js"></script>
         <section>
             <h2>Work Experience</h2>
             <hr />
+            <div class="entry">
+                <div class="row">
+                    <div class="col left"><span class="date-optional">Sept. 2023-</span>Now</div>
+                    <h3 class="col middle"><a class="silent" href="https://www.palantir.com/">Palantir Technologies</a></h3>
+                    <h3 class="col right">New York, NY</h3>
+                </div>
+                <div class="row">
+                    <div class="position-title col italic middle">Software Engineer</div>
+                </div>
+            </div>
             <div class="entry">
                 <div class="row">
                     <div class="col left"><span class="date-optional">Summer</span> 2022</div>
@@ -62,7 +74,7 @@
                     <div class="position-title col italic middle">Data Science Intern</div>
                 </div>
                 <div class="row">
-                    <div class="col midright">Designed and implemented an advanced arm’s-length data manipulation platform in Python (pandas) enabling third-party clients to perform analysis on restricted patient data without violating confidentiality. Developed a scalable graph tracing technique enabling public clinical trial data aggregation. Optimized patient cohort attribution approach via the mathematical pairing of proprietary patient data with public statistics.</div>
+                    <div class="col midright">Designed and implemented an advanced arm&apos;s-length data manipulation platform in Python (pandas) enabling third-party clients to perform analysis on restricted patient data without violating confidentiality. Developed a scalable graph tracing technique enabling public clinical trial data aggregation. Optimized patient cohort attribution approach via the mathematical pairing of proprietary patient data with public statistics.</div>
                 </div>
             </div>
             <div class="entry">
@@ -74,7 +86,7 @@
                 <div class="row">
                     <div class="position-title col italic middle">Network Security Intern</div>
                 </div>
-                <div class="row">
+                <div class="row noprint">
                     <div class="col midright">Built management applications in C++ enabling large organizations to manage security assets (SSL certificates, SSH keys) across their distributed networks. Performed maintenance, resolved major library conflicts, and integrated new features and unit tests into a production codebase serving enterprise clients such as GEICO, CISCO, and Wells Fargo.</div>
                 </div>
             </div>
@@ -96,7 +108,7 @@
         <footer>
             <h2>Skills</h2>
             <hr />
-            <p>Full Stack, Algorithms, Cloud, Git, GNU/Linux, C/C++, Python+Django, JavaScript+MERN, Databases, Compilers, Systems Design, Spanish</p>
+            <p>Systems, Full Stack, Algorithms, Databases, Compilers, Cloud, Git, GNU/Linux, C/C++, Python, JavaScript, Django, React, MongoDB, SQL, Bilingual Fluency</p>
         </footer>
     </body>
 </html>
