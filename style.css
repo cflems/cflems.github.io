@@ -45,6 +45,13 @@ a.email, a.silent {
 .unbold {
     font-weight: 400;
 }
+/* we will revise these colors */
+.java {
+    color: #990012;
+}
+.yaml {
+    color: #c68e17;
+}
 header {
     text-align: center;
     margin: 0 0 1rem;
@@ -96,33 +103,39 @@ footer p {
 .entry .midright {
     grid-column: 2 / 4;
 }
-
-@media screen and (max-width: 700px) {
-body {
-    margin: 1rem 1rem;
-}
-.entry .left {
-    white-space: break-spaces;
-}
-.entry .midright {
-    grid-column: 1 / 4;
-}
-.entry .position-title {
-    grid-column: 2 / 4;
-}
-.entry .right {
-    white-space: nowrap;
-}
-.entry .date-optional {
+.col.mobile-only {
     display: none;
 }
-header ul.subheader {
-    justify-content: space-between;
-}
-header ul.subheader li {
-    margin: 0 0.25rem;
-}
-.entry {
-    margin: 1rem 0 2rem;
-}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 1rem 1rem;
+    }
+    .entry .left {
+        white-space: break-spaces;
+    }
+    .entry .midright.description {
+        grid-column: 1 / 4;
+    }
+    .entry .right {
+        white-space: nowrap;
+    }
+    .entry .date-optional {
+        display: none;
+    }
+    header ul.subheader {
+        justify-content: space-between;
+    }
+    header ul.subheader li {
+        margin: 0 0.25rem;
+    }
+    .entry {
+        margin: 1rem 0 2rem;
+    }
+    .col.mobile-only {
+        display: inline;
+    }
+    .col.desktop-only {
+        display: none;
+    }
 }
