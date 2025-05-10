@@ -96,6 +96,10 @@ footer p {
 .entry .midright {
     grid-column: 2 / 4;
 }
+.entry .full {
+    grid-column: 1 / 4;
+    margin-top: 0.5rem;
+}
 .col.mobile-only {
     display: none;
 }
@@ -106,9 +110,6 @@ footer p {
     }
     .entry .left {
         white-space: break-spaces;
-    }
-    .entry .midright.description {
-        grid-column: 1 / 4;
     }
     .entry .right {
         white-space: nowrap;
