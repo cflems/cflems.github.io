@@ -45,13 +45,6 @@ a.email, a.silent {
 .unbold {
     font-weight: 400;
 }
-/* we will revise these colors */
-.java {
-    color: #990012;
-}
-.yaml {
-    color: #c68e17;
-}
 header {
     text-align: center;
     margin: 0 0 1rem;
